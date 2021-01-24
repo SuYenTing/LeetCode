@@ -1,0 +1,9 @@
+/*
+183. Customers Who Never Order
+Difficulty : Easy
+題目來源：https://leetcode.com/problems/customers-who-never-order/
+*/
+
+select Name as Customers
+from Customers
+where Id not in (select CustomerId from Orders);
